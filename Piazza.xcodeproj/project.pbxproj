@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F92034F42A1FB8F700609578 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92034F32A1FB8F700609578 /* Api.swift */; };
+		F92034F62A1FB9EB00609578 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92034F52A1FB9EB00609578 /* RootViewController.swift */; };
+		F92034F92A20065E00609578 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F92034FB2A20065E00609578 /* Localizable.strings */; };
+		F92034FD2A20074200609578 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92034FC2A20074200609578 /* BaseNavigationController.swift */; };
+		F92034FF2A20077B00609578 /* RoutingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92034FE2A20077B00609578 /* RoutingController.swift */; };
+		F92035012A2007E000609578 /* path_configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = F92035002A2007E000609578 /* path_configuration.json */; };
+		F92035032A20081C00609578 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92035022A20081C00609578 /* Global.swift */; };
+		F92035052A2009DF00609578 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92035042A2009DF00609578 /* WebViewController.swift */; };
+		F92035072A200AB600609578 /* ViewControllerVendor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92035062A200AB600609578 /* ViewControllerVendor.swift */; };
 		F9FBF0C229A7C6CF007930E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FBF0C129A7C6CF007930E0 /* AppDelegate.swift */; };
 		F9FBF0C429A7C6CF007930E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FBF0C329A7C6CF007930E0 /* SceneDelegate.swift */; };
 		F9FBF0CB29A7C6D1007930E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9FBF0CA29A7C6D1007930E0 /* Assets.xcassets */; };
@@ -35,6 +44,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F92034F32A1FB8F700609578 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		F92034F52A1FB9EB00609578 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		F92034FA2A20065E00609578 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F92034FC2A20074200609578 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		F92034FE2A20077B00609578 /* RoutingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingController.swift; sourceTree = "<group>"; };
+		F92035002A2007E000609578 /* path_configuration.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = path_configuration.json; sourceTree = "<group>"; };
+		F92035022A20081C00609578 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		F92035042A2009DF00609578 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		F92035062A200AB600609578 /* ViewControllerVendor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerVendor.swift; sourceTree = "<group>"; };
 		F9FBF0BE29A7C6CF007930E0 /* Piazza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Piazza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9FBF0C129A7C6CF007930E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9FBF0C329A7C6CF007930E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,10 +116,19 @@
 			isa = PBXGroup;
 			children = (
 				F9FBF0C129A7C6CF007930E0 /* AppDelegate.swift */,
+				F92034F52A1FB9EB00609578 /* RootViewController.swift */,
+				F92034F32A1FB8F700609578 /* Api.swift */,
 				F9FBF0C329A7C6CF007930E0 /* SceneDelegate.swift */,
+				F92034FB2A20065E00609578 /* Localizable.strings */,
+				F92034FC2A20074200609578 /* BaseNavigationController.swift */,
+				F92035002A2007E000609578 /* path_configuration.json */,
+				F92035022A20081C00609578 /* Global.swift */,
 				F9FBF0CA29A7C6D1007930E0 /* Assets.xcassets */,
 				F9FBF0CC29A7C6D1007930E0 /* LaunchScreen.storyboard */,
 				F9FBF0CF29A7C6D1007930E0 /* Info.plist */,
+				F92034FE2A20077B00609578 /* RoutingController.swift */,
+				F92035042A2009DF00609578 /* WebViewController.swift */,
+				F92035062A200AB600609578 /* ViewControllerVendor.swift */,
 			);
 			path = Piazza;
 			sourceTree = "<group>";
@@ -235,7 +262,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9FBF0CE29A7C6D1007930E0 /* LaunchScreen.storyboard in Resources */,
+				F92034F92A20065E00609578 /* Localizable.strings in Resources */,
 				F9FBF0CB29A7C6D1007930E0 /* Assets.xcassets in Resources */,
+				F92035012A2007E000609578 /* path_configuration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +309,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F92034F42A1FB8F700609578 /* Api.swift in Sources */,
 				F9FBF0C229A7C6CF007930E0 /* AppDelegate.swift in Sources */,
+				F92035072A200AB600609578 /* ViewControllerVendor.swift in Sources */,
+				F92034FF2A20077B00609578 /* RoutingController.swift in Sources */,
+				F92034F62A1FB9EB00609578 /* RootViewController.swift in Sources */,
+				F92034FD2A20074200609578 /* BaseNavigationController.swift in Sources */,
 				F9FBF0C429A7C6CF007930E0 /* SceneDelegate.swift in Sources */,
+				F92035032A20081C00609578 /* Global.swift in Sources */,
+				F92035052A2009DF00609578 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +354,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		F92034FB2A20065E00609578 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F92034FA2A20065E00609578 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		F9FBF0CC29A7C6D1007930E0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -460,7 +504,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -490,7 +534,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
