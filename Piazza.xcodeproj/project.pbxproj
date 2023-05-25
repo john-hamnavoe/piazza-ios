@@ -139,6 +139,7 @@
 				F9FBF0BA29A7C6CF007930E0 /* Sources */,
 				F9FBF0BB29A7C6CF007930E0 /* Frameworks */,
 				F9FBF0BC29A7C6CF007930E0 /* Resources */,
+				F92034F22A1F982700609578 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -260,6 +261,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F92034F22A1F982700609578 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nINFO_PLIST=\"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nPLISTBUDDY=\"/usr/libexec/PlistBuddy\"\n\nif [ \"${CONFIGURATION}\" == \"Debug\" ]; then\n    $PLISTBUDDY -c \"Add :NSAppTransportSecurity dict\" \"${INFO_PLIST}\" || true\n    $PLISTBUDDY -c \"Add :NSAppTransportSecurity:NSAllowsArbitraryLoads bool true\" \"${INFO_PLIST}\" || true\n    $PLISTBUDDY -c \"Set :NSAppTransportSecurity:NSAllowsArbitraryLoads true\" \"${INFO_PLIST}\"\nelse\n    $PLISTBUDDY -c \"Delete :NSAppTransportSecurity:NSAllowsArbitraryLoads\" \"${INFO_PLIST}\" || true\nfi\n\nALLOWS_ARBITRARY_LOADS_ENABLED=$($PLISTBUDDY -c \"Print :NSAppTransportSecurity:NSAllowsArbitraryLoads\" \"${INFO_PLIST}\")\nif [ \"${ALLOWS_ARBITRARY_LOADS_ENABLED}\" == \"true\" ]; then\n  echo \"warning: ATS is disabled. :NSAppTransportSecurity:NSAllowsArbitraryLoads set to true. This is insecure and should not be used in release builds.\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F9FBF0BA29A7C6CF007930E0 /* Sources */ = {
