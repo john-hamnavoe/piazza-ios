@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		F9FBF0C229A7C6CF007930E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FBF0C129A7C6CF007930E0 /* AppDelegate.swift */; };
 		F9FBF0C429A7C6CF007930E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FBF0C329A7C6CF007930E0 /* SceneDelegate.swift */; };
-		F9FBF0C629A7C6CF007930E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FBF0C529A7C6CF007930E0 /* ViewController.swift */; };
-		F9FBF0C929A7C6CF007930E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9FBF0C729A7C6CF007930E0 /* Main.storyboard */; };
 		F9FBF0CB29A7C6D1007930E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9FBF0CA29A7C6D1007930E0 /* Assets.xcassets */; };
 		F9FBF0CE29A7C6D1007930E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9FBF0CC29A7C6D1007930E0 /* LaunchScreen.storyboard */; };
 		F9FBF0D929A7C6D1007930E0 /* PiazzaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FBF0D829A7C6D1007930E0 /* PiazzaTests.swift */; };
@@ -40,8 +38,6 @@
 		F9FBF0BE29A7C6CF007930E0 /* Piazza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Piazza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9FBF0C129A7C6CF007930E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9FBF0C329A7C6CF007930E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F9FBF0C529A7C6CF007930E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F9FBF0C829A7C6CF007930E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9FBF0CA29A7C6D1007930E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9FBF0CD29A7C6D1007930E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9FBF0CF29A7C6D1007930E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -103,8 +99,6 @@
 			children = (
 				F9FBF0C129A7C6CF007930E0 /* AppDelegate.swift */,
 				F9FBF0C329A7C6CF007930E0 /* SceneDelegate.swift */,
-				F9FBF0C529A7C6CF007930E0 /* ViewController.swift */,
-				F9FBF0C729A7C6CF007930E0 /* Main.storyboard */,
 				F9FBF0CA29A7C6D1007930E0 /* Assets.xcassets */,
 				F9FBF0CC29A7C6D1007930E0 /* LaunchScreen.storyboard */,
 				F9FBF0CF29A7C6D1007930E0 /* Info.plist */,
@@ -242,7 +236,6 @@
 			files = (
 				F9FBF0CE29A7C6D1007930E0 /* LaunchScreen.storyboard in Resources */,
 				F9FBF0CB29A7C6D1007930E0 /* Assets.xcassets in Resources */,
-				F9FBF0C929A7C6CF007930E0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +280,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9FBF0C629A7C6CF007930E0 /* ViewController.swift in Sources */,
 				F9FBF0C229A7C6CF007930E0 /* AppDelegate.swift in Sources */,
 				F9FBF0C429A7C6CF007930E0 /* SceneDelegate.swift in Sources */,
 			);
@@ -326,14 +318,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F9FBF0C729A7C6CF007930E0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F9FBF0C829A7C6CF007930E0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F9FBF0CC29A7C6D1007930E0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -466,15 +450,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KK3749WSLA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Piazza/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -482,6 +468,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hamnavoepartners.Piazza;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -493,15 +480,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Piazza/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -509,6 +498,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hamnavoepartners.Piazza;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
