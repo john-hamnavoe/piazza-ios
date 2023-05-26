@@ -3,3 +3,6 @@
 "tab.messages" = "Messages";
 "tab.myAds" = "My Ads";
 "tab.profile" = "Profile";
+
+"error.title" = "Whoops, Something went wrong!";
+"error.ok" = "Ok";
